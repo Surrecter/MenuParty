@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Menu</title>
     
-    <!-- Link to Google Fonts for Leckerli One -->
-    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+    <!-- Link to Google Fonts for Playfair Display and Leckerli One -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Leckerli+One&display=swap" rel="stylesheet">
     
     <style>
         body {
@@ -21,22 +21,24 @@
             box-sizing: border-box; /* Prevents padding from affecting the total height */
         }
         h1 {
-            font-family: 'Leckerli One', cursive; /* Apply Leckerli One font */
+            font-family: 'Playfair Display', serif; /* Playfair Display for the title */
             font-size: 3rem; /* Adjusted size for clarity */
             margin-bottom: 1rem;
             color: #333;
             text-align: center;
             word-wrap: break-word; /* Ensures the text breaks into a new line */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for title */
         }
         img {
             max-width: 100%;
             max-height: 100%; /* Ensures the image scales to fit within the viewport */
             height: auto; /* Maintains aspect ratio */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the image */
             border-radius: 10px;
             object-fit: contain; /* Ensures the image is fully visible within the container */
         }
         p {
+            font-family: 'Playfair Display', serif; /* Apply Playfair Display to the text */
             margin-top: 1rem; /* Adds space above the text */
             font-size: 1rem;
             color: #666;
@@ -45,7 +47,7 @@
     </style>
 </head>
 <body>
-    <h1>Chatzidimou Sis<br>Beach Party</h1> <!-- Title on two lines -->
+    <h1>Chatzidimou Sisters<br>Beach Party</h1> <!-- Title on two lines -->
     <img src="menu.jpg" alt="Restaurant Menu">
     <p>If you cannot see the image, please refresh or contact us for the menu.</p>
 </body>
