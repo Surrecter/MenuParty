@@ -10,18 +10,27 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column; /* Stacks content vertically for better mobile layout */
+            padding: 1rem;
             height: 100vh;
             background-color: #f8f8f8;
         }
         img {
-            max-width: 100%;
-            height: auto;
+            max-width: 100%; /* Ensures image doesn't exceed device width */
+            height: auto; /* Maintains aspect ratio */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
+        }
+        p {
+            margin-top: 1rem;
+            font-size: 1rem;
+            color: #666;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <img src="menu.jpg" alt="Restaurant Menu">
+    <p>If you cannot see the image, please refresh or contact us for the menu.</p>
 </body>
 </html>
