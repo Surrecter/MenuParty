@@ -6,7 +6,8 @@
     <title>Restaurant Menu</title>
     
     <!-- Link to Google Fonts for Playfair Display and Leckerli One -->
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Leckerli+One&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Leckerli+One&display=swap" rel="stylesheet">
+    
     <style>
         body {
             margin: 0;
@@ -21,12 +22,12 @@
         }
         h1 {
             font-family: 'Playfair Display', serif; /* Playfair Display for the title */
-            font-size: 3rem; /* Adjusted size for clarity */
-            margin-bottom: 1rem;
-            color: #5b542b;
+            font-size: clamp(2rem, 5vw, 4rem); /* Font size adjusts between 2rem and 4rem depending on the viewport */
+            margin-bottom: 0.5rem; /* Adjust space below */
+            color: #333;
             text-align: center;
-            word-wrap: nowrap; /* Prevents the text breaks into a new line */
             text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on text */
+            white-space: nowrap; /* Prevents text from wrapping to a new line */
         }
         img {
             max-width: 100%;
@@ -46,7 +47,7 @@
     </style>
 </head>
 <body>
-    <h1>Chatzi Sisters<br>~Beach Party~</h1> <!-- Title on two lines -->
+    <h1>Chatzidimou Sisters<br>Beach Party</h1> <!-- Title on two lines -->
     <img src="menu.jpg" alt="Restaurant Menu">
     <p>If you cannot see the image, please refresh or contact us for the menu.</p>
 </body>
